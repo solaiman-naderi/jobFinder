@@ -13,7 +13,13 @@ import { useRouter } from "expo-router";
 import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
 
-const jobTypes = ["Full-time", "Part-time", "Constractor", "Remot"];
+const jobTypes = [
+  "Full-time",
+  "Part-time",
+  "Constractor",
+  "Remot",
+  "full stack",
+];
 const Welcome = () => {
   const router = useRouter();
   const [activeJobType, setActiveJobType] = useState("Full-time");
@@ -57,9 +63,10 @@ const Welcome = () => {
           keyExtractor={(item) => item}
           contentContainerStyle={{ columnGap: SIZES.small }}
           horizontal
+          
         />
       </View>
-     </View>
+    </View>
   );
 };
 
