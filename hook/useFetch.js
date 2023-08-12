@@ -8,7 +8,7 @@ const useFetch = (endpoint, query) => {
 
   const options = {
     method: "GET",
-    url: "https://reqres.in/api/users?page=2",
+    url: `https://reqres.in/api/${endpoint}`,
   };
   const fetchData = async () => {
     setIsLoading(true);

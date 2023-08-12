@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     marginVertical: SIZES.small,
   },
   pointWrapper: {
-    flexDirection: "row",
-    justifyContent: "flex-start",
+    flexDirection: "column",
+    justifyContent: "center",
     alignItems: "flex-start",
     marginVertical: SIZES.small / 1.25,
   },
